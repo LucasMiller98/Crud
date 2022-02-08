@@ -3,6 +3,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 50%;
-  width: 70%;
+  height: 90%;
+  width: 40%;
+  background: #fff;
+  box-shadow: 12px 10px 12px #606060;
+  border-radius: 5px;
+  gap: 16px;
+  position: relative;
 }
