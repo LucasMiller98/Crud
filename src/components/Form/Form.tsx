@@ -1,11 +1,11 @@
 import { FormProps } from './types/types'
 import './styles/styles.css'
 
-export function Form({ children, onSubmitForm }: FormProps) {
+export function Form({ children, onSubmitForm, classNameForm }: FormProps) {
   return (
     <form 
       onSubmit={ onSubmitForm } 
-      className="form--register--container"
+      className={ classNameForm }
     >
       { children }
     </form>

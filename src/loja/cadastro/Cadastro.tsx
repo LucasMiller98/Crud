@@ -3,12 +3,12 @@ import { Form } from '../../components/Form/Form'
 import { Input } from '../../components/Input/Input'
 import { TitleForm } from '../../components/TitleForm/TitleForm'
 import { Box } from '../../components/Box/Box'
-import '../styles.css'
+// import '../styles.css'
 
 export function Cadastro() {
   return (
     <Box classNameContainer='app--container'>
-      <Form>
+      <Form classNameForm="form--register--container">
         <TitleForm text='Screen Shop' />
         
         <Input 
@@ -35,13 +35,13 @@ export function Cadastro() {
           autoComplete_input='off'
         />
         
-        <Input 
+        {/* <Input 
           type='password'
           name='password'
           placeholder='Senha'
           className_registerInput='register--input'
           autoComplete_input='off'
-        />
+        /> */}
 
         <Button 
           text='Cadastrar'

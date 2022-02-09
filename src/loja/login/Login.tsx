@@ -3,13 +3,13 @@ import { Input } from '../../components/Input/Input'
 import { Button } from '../../components/Button/button'
 import { Box } from '../../components/Box/Box'
 import { Form } from '../../components/Form/Form'
-import '../styles.css'
 
 export function Login() {
   return (
     <>
       <Box classNameContainer='app--container'>
-        <Form>
+        
+        <Form classNameForm="form--register--container">
           <TitleForm text='Login' />
           
           <Input 

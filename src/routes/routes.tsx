@@ -1,15 +1,22 @@
 import {
   BrowserRouter as Router,
-  Routes as RoutesReact, 
-  Route } from 'react-router-dom'
-import { Cadastro } from '../loja/cadastro/Cadastro'
+  Routes, 
+  Route,
+  Navigate
+} from 'react-router-dom'
 
-export function Routes() {
+import { Cadastro } from '../loja/cadastro/Cadastro'
+import { Login } from '../loja/login/Login'
+
+export function AppRoutes() {
   return (
-    <Router>
-      <RoutesReact>
-        <Route path='/cadastro' element={Cadastro} />
-      </RoutesReact>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          {/* <Route path='/login' element={<Login />} /> */}
+          <Route path='/' element={<Cadastro/>} />
+        </Routes>
+      </Router>
+    </>
   )
 }
