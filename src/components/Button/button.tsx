@@ -1,9 +1,16 @@
 import { ButtonProps } from './types/types'
 import './styles/styles.css'
 
-export function Button({ text, type }: ButtonProps) {
+export function Button({ text, type, isButtonCadaster }: ButtonProps) {
   return (
-    <button type={type} className="buttons">
+    <button 
+      type={type} 
+      className={`
+      ${ isButtonCadaster ? 
+      'button-cadaster': 
+      'buttons'}`
+      }
+    >
       { text }
     </button>
   )

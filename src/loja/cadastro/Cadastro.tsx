@@ -3,13 +3,21 @@ import { Form } from '../../components/Form/Form'
 import { Input } from '../../components/Input/Input'
 import { TitleForm } from '../../components/TitleForm/TitleForm'
 import { Box } from '../../components/Box/Box'
-// import '../styles.css'
+import { BiArrowBack } from 'react-icons/bi'
+import './styles/styles.css'
+import { Link } from 'react-router-dom'
 
 export function Cadastro() {
+  
   return (
     <Box classNameContainer='app--container'>
+      
+      <Link to='/login' className='anchor-arrow-back'>
+        <BiArrowBack size={45} className='arrow-back' />
+      </Link>
+      
       <Form classNameForm="form--register--container">
-        <TitleForm text='Screen Shop' />
+        <TitleForm text='Scrim Shop' />
         
         <Input 
           type="text" 
@@ -35,17 +43,18 @@ export function Cadastro() {
           autoComplete_input='off'
         />
         
-        {/* <Input 
+        <Input 
           type='password'
           name='password'
           placeholder='Senha'
           className_registerInput='register--input'
           autoComplete_input='off'
-        /> */}
+        />
 
         <Button 
           text='Cadastrar'
           type='submit'
+          isButtonCadaster
         />
       </Form>
     </Box>

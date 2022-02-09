@@ -1,0 +1,26 @@
+.separator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60.7%;
+  color: #606060;
+  font-size: 1.2rem;
+  margin-top: 7%;
+}
+
+.separator::before {
+  content: "";
+  width: 40%;
+  border-bottom: 2px solid #606060;
+  position: absolute;
+  right: 0;
+}
+
+.separator::after {
+  content: "";
+  width: 40%;
+  border-bottom: 2px solid #606060;
+  position: absolute;
+  left: 0;
+}

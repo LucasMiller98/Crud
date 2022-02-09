@@ -1,0 +1,18 @@
+.arrow-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1.2%;
+  margin-left: 1.2%;
+  cursor: pointer;
+  transition: all ease-out .3s;
+}
+
+.arrow-back:hover {
+  transform: scale(.9);
+}
+
+.anchor-arrow-back {
+  text-decoration: none;
+  color: #131313;
+}

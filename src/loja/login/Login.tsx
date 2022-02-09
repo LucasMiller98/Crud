@@ -3,6 +3,8 @@ import { Input } from '../../components/Input/Input'
 import { Button } from '../../components/Button/button'
 import { Box } from '../../components/Box/Box'
 import { Form } from '../../components/Form/Form'
+import { Anchor } from '../../components/Anchor/Anchor'
+import { Separator } from '../../components/Separator/Separator'
 
 export function Login() {
   return (
@@ -31,6 +33,14 @@ export function Login() {
           <Button 
             text='Entrar' 
             type='submit' 
+          />
+
+          <Separator classNameSeparator='separator' text='ou' />
+
+          <Anchor 
+            endpoint='/cadastro' 
+            text='Cadastrar' 
+            classNameAnchor='anchor-cadaster' 
           />
         </Form>
       </Box>
