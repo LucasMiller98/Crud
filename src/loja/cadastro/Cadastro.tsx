@@ -1,12 +1,13 @@
-import { Button } from '../components/Button/button'
-import { Form } from '../components/Form/Form'
-import { Input } from '../components/Input/Input'
-import { TitleForm } from '../components/TitleForm/TitleForm'
-import './styles.css'
+import { Button } from '../../components/Button/button'
+import { Form } from '../../components/Form/Form'
+import { Input } from '../../components/Input/Input'
+import { TitleForm } from '../../components/TitleForm/TitleForm'
+import { Box } from '../../components/Box/Box'
+import '../styles.css'
 
-export function LojaGames() {
+export function Cadastro() {
   return (
-    <div className="app--container">
+    <Box classNameContainer='app--container'>
       <Form>
         <TitleForm text='Screen Shop' />
         
@@ -17,6 +18,7 @@ export function LojaGames() {
           className_registerInput='register--input' 
           autoComplete_input='off'
         />
+
         <Input 
           type="text" 
           name="cost" 
@@ -24,10 +26,19 @@ export function LojaGames() {
           className_registerInput='register--input'
           autoComplete_input='off'
         />
+        
         <Input 
           type="text" 
           name="category" 
           placeholder="Categoria" 
+          className_registerInput='register--input'
+          autoComplete_input='off'
+        />
+        
+        <Input 
+          type='password'
+          name='password'
+          placeholder='Senha'
           className_registerInput='register--input'
           autoComplete_input='off'
         />
@@ -37,6 +48,6 @@ export function LojaGames() {
           type='submit'
         />
       </Form>
-    </div>
+    </Box>
   )
 }

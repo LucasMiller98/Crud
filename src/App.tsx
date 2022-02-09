@@ -1,11 +1,11 @@
 import { Routes } from './routes/routes'
-import { LojaGames } from './loja/LojaGames'
+import { Cadastro } from './loja/cadastro/Cadastro'
 import './global/styles.css'
 
 function App() {
   return (
     <div>
-      <LojaGames />
+      <Cadastro />
       <Routes />
     </div>
   )
